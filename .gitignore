@@ -1,0 +1,9 @@
+.idea
+.eslintcache
+.DS_Store
+node_modules
+/bin
+/build
+/coverage*
+/db
+.secrets.json

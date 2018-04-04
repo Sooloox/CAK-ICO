@@ -1,0 +1,29 @@
+{
+    "comment startTime":            "04/05/2018 @ 12:00am (GMT)",
+    "startTime":                    1525392000,
+    "comment endTime":              "30/06/2019 @ 12:00am (GMT)",
+    "endTime":                      1561852800,
+    "comment cap":                  "Will be calculated to 30 million CAK tokens",
+    "cap":                          3e7,
+    "comment rateUsdPerEth":        "ratio USD per ETH",
+    "rateUsdPerEth":                1000,
+    "comment rateWeiPerCak":        "ratio WEI per CAK",
+    "rateWeiPerCak":                9e15,
+    "fundReceiveWallet":            "0x25413e3bb6eed34d8018c042bd29d426638d3a3d",
+    "networks": {
+        "develop": {
+            "host": "localhost",
+            "port": 9545,
+            "chainId": 4447,
+            "gas": 4700000,
+            "gasPrice": 1
+        },
+        "coverage": {
+            "host": "localhost",
+            "port": 8555,
+            "chainId": 4447,
+            "gas": "0xfffffffffff",
+            "gasPrice": "0x01"
+        }
+    }
+}

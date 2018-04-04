@@ -1,0 +1,62 @@
+{
+  "name": "cak-token",
+  "version": "1.0.0",
+  "description": "CAK Token.",
+  "author": "Validity Labs AG <info@validitylabs.org>",
+  "homepage": "https://github.com/validitylabs/cak-token",
+  "private": true,
+  "license": "UNLICENSED",
+  "engines": {
+    "node": "^8.x"
+  },
+  "scripts": {
+    "postinstall": "node ./tools/hashChecker.js",
+    "start": "yarn run dev",
+    "compile": "truffle compile --all",
+    "migrate": "yarn run migrate-dev",
+    "migrate-dev": "truffle migrate --reset --compile-all --network develop",
+    "test": "yarn run test-dev",
+    "test-dev": "truffle test --network develop",
+    "coverage": "solidity-coverage",
+    "dev": "truffle develop",
+    "testrpc": "truffle develop --log --gasPrice 1 --gasLimit 4700000",
+    "debug": "truffle debug",
+    "clean": "shx rm -fr dist build bin coverage coverage.json",
+    "reset": "npm run clean; shx rm -fr  node_modules",
+    "upgrade": "yarn run reset; yarn upgrade"
+  },
+  "dependencies": {
+    "moment": "^2.20.1",
+    "truffle-contract": "^3.0.1",
+    "web3": "^1.0.0-beta.27",
+    "zeppelin-solidity": "^1.5.0"
+  },
+  "devDependencies": {
+    "@validitylabs/js-utils": "^0.0.1",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^2.0.2",
+    "colors": "^1.1.2",
+    "eslint": "^4.14.0",
+    "eslint-config-xo": "^0.19.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "ganache-core": "^2.0.2",
+    "jsdoc": "^3.5.5",
+    "keythereum": "^1.0.2",
+    "shelljs": "^0.7.8",
+    "shx": "^0.2.2",
+    "solc": "0.4.18",
+    "solidity-coverage": "git://github.com/validitylabs/solidity-coverage.git",
+    "superagent": "^3.8.2",
+    "truffle": "^4.0.4",
+    "truffle-hdwallet-provider": "0.0.3"
+  },
+  "optionalDevDependencies": {
+    "fsevents": "*"
+  }
+}
