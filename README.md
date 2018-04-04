@@ -13,16 +13,13 @@
 
 ## Rate: Needs to be defined as part of the constructor (when deploying the contract)
 - Planned Rate: 9.00 USD per CAK
-- XXXX.00 USD per ETH  - use the CAK Rate Calc excel spread sheet
+- XXXX.00 USD per ETH  
 -   XX.XX USD per WEI
--  XXXeXX WEI per CAK - the spreadsheet calculates this number
+-  XXXeXX WEI per CAK 
 
 ## Cap
  - Total cap: 30 Million CAK tokens
  - Decimals: 0
-
-## Beneficiary Wallet
-0x25413e3bB6Eed34d8018C042Bd29d426638d3A3D
 
 ## Requirements
 The server side scripts requires NodeJS 8.
